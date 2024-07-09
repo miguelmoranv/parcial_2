@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadoras en Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 56px; /* Espacio para el navbar fijo */
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+      margin-bottom: 20px;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand">Calculadoras</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Efectividad">Efectividad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Efectividad_eficiencia_eficacia">Efectividad,eficiencia y eficacia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Efectividad_empresarial">Efectividad empresarial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Rio">Rio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div id="Efectividad" class="iframe-container">
+    <iframe src="efectividad_cotidiana.html" allowfullscreen></iframe>
+  </div>
+  <div id="Efectividad_eficiencia_eficacia" class="iframe-container">
+    <iframe src="efectividad_eficiencia_eficacia.html" allowfullscreen></iframe>
+  </div>
+  <div id="Efectividad_empresarial" class="iframe-container">
+    <iframe src="efectividad_empresarial.html" allowfullscreen></iframe>
+  </div>
+  <div id="Rio" class="iframe-container">
+    <iframe src="rio.html" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
